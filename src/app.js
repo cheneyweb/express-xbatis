@@ -22,10 +22,10 @@ app.use(passport.session());
 
 // 使用路由统一控制(目前支持以下4种RESTful请求)
 /**
- * [POST]http://host:port/xbatis/MODEL_NAME/query/METHOD_NAME
- * [POST]http://host:port/xbatis/MODEL_NAME/update/METHOD_NAME
- * [POST]http://host:port/xbatis/MODEL_NAME/insert/METHOD_NAME
- * [POST]http://host:port/xbatis/MODEL_NAME/destroy/METHOD_NAME
+ * [POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
+ * [POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
+ * [POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
+ * [POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
  */
 app.use('/', router);
 
