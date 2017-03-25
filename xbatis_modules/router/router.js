@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var passport = require('../auth/passport_config.js');
-var QueryController = require('../controller/QueryController.js');
+var passport = require(__dirname + '/../auth/passport_config.js');
+var QueryController = require(__dirname + '/../controller/QueryController.js');
 var log = require('tracer').colorConsole({ level: require('config').get('log').level });
 
 // 配置路由与Controller,Dao方法的绑定

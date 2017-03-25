@@ -1,10 +1,10 @@
 // 应用服务
 var express = require('express');
 var bodyParser = require('body-parser');
-var router = require('../xbatis_modules/router/router.js');
+var router = require(__dirname + '/../xbatis_modules/router/router.js');
 // 认证相关
 var expressSession = require('express-session');
-var passport = require('../xbatis_modules/auth/passport_config.js');
+var passport = require(__dirname + '/../xbatis_modules/auth/passport_config.js');
 // 日志服务
 var log = require('tracer').colorConsole({ level: require('config').get('log').level });
 

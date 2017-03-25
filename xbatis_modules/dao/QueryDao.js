@@ -1,5 +1,5 @@
 var log = require('tracer').colorConsole({ level: require('config').get('log').level });
-var nodebatis = require('../nodebatis/nodebatis.js');
+var nodebatis = require(__dirname + '/../nodebatis/nodebatis.js');
 
 var QueryDao = {
     execsql: async function findAll(mapper, param) {

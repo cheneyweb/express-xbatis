@@ -1,5 +1,5 @@
 var log = require('tracer').colorConsole({ level: require('config').get('log').level });
-var QueryDao = require('../dao/QueryDao.js');
+var QueryDao = require(__dirname + '/../dao/QueryDao.js');
 
 /**
  * [ModelController 实体控制器，接收路由入参JSON，自定义mapper进行SQL操作]
