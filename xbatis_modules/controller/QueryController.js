@@ -1,5 +1,5 @@
-var log = require('tracer').colorConsole({ level: require('config').get('log').level });
-var QueryDao = require(__dirname + '/../dao/QueryDao.js');
+var log = require('tracer').colorConsole({ level: require('config').get('log').level })
+var QueryDao = require(__dirname + '/../dao/QueryDao.js')
 
 /**
  * [ModelController 实体控制器，接收路由入参JSON，自定义mapper进行SQL操作]
@@ -15,12 +15,12 @@ var QueryController = {
     query: function(req, res) {
         QueryDao.execsql(req.mapperName, req.body)
         .then(function(result) {
-            res.send(result);
+            res.send(result)
         })
         .catch(function(err) {
             log.error(err.message);
-        });
+        })
     }
 };
 
-module.exports = QueryController;
+module.exports = QueryController

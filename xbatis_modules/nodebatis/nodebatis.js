@@ -1,9 +1,9 @@
-var NodeBatis = require('nodebatis');
-var config = require('config');
-var dbConfig = config.get('db');
+var NodeBatis = require('nodebatis')
+var config = require('config')
+var dbConfig = config.get('db')
 const Types = NodeBatis.Types
 
-const nodebatis = new NodeBatis('../yaml', {
+const nodebatis = new NodeBatis('./yaml', {
     debug: true,
     dialect: 'mysql',
     host: dbConfig.host,
@@ -23,4 +23,4 @@ const nodebatis = new NodeBatis('../yaml', {
 //     age: Types.INT
 // })
 
-module.exports = nodebatis;
+module.exports = nodebatis

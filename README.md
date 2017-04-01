@@ -15,15 +15,26 @@
 
 框架目录结构（后台）
 >
-    xmodel
-        src/app.js——系统入口
-        yaml/*.yml——SQL文件，这是使用该框架开发唯一需要写的文件
+	├── README.md
+	├── app.js (应用服务入口)
+	├── config (应用服务配置)
+	│   ├── default.json
+	│   └── production.json
+	├── node_modules
+	├── package.json
+	├── src
+	├── xbatis_modules
+	│   ├── auth
+	│   ├── controller
+	│   ├── dao
+	│   ├── nodebatis
+	│   └── router
+	└── yaml (SQL业务文件，开发时唯一需要编写的文件)
+	    ├── product.yml
+	    └── user.yml
 
 RESTful规则
 >
-	[POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
-	[POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
-	[POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
 	[POST]http://host:port/xbatis/MODEL_NAME/METHOD_NAME
 
 例子
@@ -58,3 +69,4 @@ RESTful规则
 >
 	2017.03.18:无后端理念确认，1.0版本推出
 	2017.03.25:代码与文档整理
+	2017.04.01:为支持ES2015做准备，代码优化
