@@ -1,4 +1,4 @@
-var log = require('tracer').colorConsole({ level: require('config').get('log').level })
+var log = require('tracer').colorConsole()
 var QueryDao = require(__dirname + '/../dao/QueryDao.js')
 
 /**

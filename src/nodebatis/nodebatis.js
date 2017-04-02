@@ -3,7 +3,7 @@ var config = require('config')
 var dbConfig = config.get('db')
 const Types = NodeBatis.Types
 
-const nodebatis = new NodeBatis('./yaml', {
+const nodebatis = new NodeBatis('./src/yaml', {
     debug: true,
     dialect: 'mysql',
     host: dbConfig.host,

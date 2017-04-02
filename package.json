@@ -5,18 +5,15 @@
     "build": "babel src -d dist"
   },
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "author": "cheneyxu",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
     "config": "^1.25.1",
-    "connect-flash": "^0.1.1",
     "express": "^4.15.2",
     "express-session": "^1.15.1",
     "moment": "^2.17.1",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
     "tracer": "^0.8.7",
     "nodebatis": "^2.1.1"
   },

@@ -1,11 +1,23 @@
 # xbatis
-极简风格的RESTful无后端Node框架，只需要写SQL，然后直接RESTful请求，全自动CRUD，与xmodel项目相辅相成
+极简风格的RESTful无后端Node框架，基于x-batis中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD，与xmodel项目相辅相成
 
-使用说明
+框架整体使用说明
 >
-	1,config/default.js中设置数据库连接，执行npm install
-	2,提前创建好数据表，或者使用xmodel自动生成数据库
-	2,node app.js(启动)
+	1, config/default.js 中设置数据库连接，执行npm install
+
+	2, 提前创建好数据表，或者使用 xmodel 自动生成数据库
+
+	2, node app.js(启动)
+
+单独使用x-batis中间件(任意express应用均可集成)
+>
+	1, npm install x-batis --save
+
+	2, let xbatis = require('x-batis')
+
+	3, app.use('/xbatis/', xbatis)
+
+	yaml文件夹路径默认是 {project}/src/yaml/
 
 命名规则
 >
@@ -23,15 +35,10 @@
 	├── node_modules
 	├── package.json
 	├── src
-	├── xbatis_modules
-	│   ├── auth
-	│   ├── controller
-	│   ├── dao
-	│   ├── nodebatis
-	│   └── router
-	└── yaml (SQL业务文件，开发时唯一需要编写的文件)
-	    ├── product.yml
-	    └── user.yml
+	│   ├── nodebatis (数据库连接)
+	│   └── yaml (开发时只需要编写这个目录下的文件，一个模块对应一个SQL文件)
+	└── xbatis_modules
+	    └── x-batis (无后端Router中间件x-batis的源代码)
 
 RESTful规则
 >
