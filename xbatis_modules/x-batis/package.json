@@ -1,6 +1,6 @@
 {
   "name": "x-batis",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "sql"
   ],
   "dependencies": {
+    "nodebatis": "^2.1.1",
     "express": "^4.15.2",
     "tracer": "^0.8.7"
   },

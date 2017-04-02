@@ -7,7 +7,7 @@
 
 	2, 提前创建好数据表，或者使用 xmodel 自动生成数据库
 
-	2, node app.js(启动)
+	3, node app.js(启动)
 
 单独使用x-batis中间件(任意express应用均可集成)
 >
