@@ -1,5 +1,5 @@
-# xbatis
-极简风格的RESTful无后端Node框架，基于x-batis中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD，与xmodel项目相辅相成
+# express-xbatis
+极简风格的RESTful无后端Node框架，基于express-xbatis中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD，与xmodel项目相辅相成
 
 框架整体使用说明
 >
