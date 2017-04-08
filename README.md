@@ -38,7 +38,7 @@
 	│   ├── nodebatis (数据库连接)
 	│   └── yaml (开发时只需要编写这个目录下的文件，一个模块对应一个SQL文件)
 	└── xbatis_modules
-	    └── x-batis (无后端Router中间件x-batis的源代码)
+	    └── express-xbatis (无后端Router中间件express-xbatis的源代码)
 
 RESTful规则
 >
