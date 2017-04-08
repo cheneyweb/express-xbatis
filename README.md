@@ -1,5 +1,5 @@
 # express-xbatis
-极简风格的RESTful无后端Node框架，基于express-xbatis中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD，与xmodel项目相辅相成
+极简风格的RESTful无后端Node框架，基于express-xbatis中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD
 
 框架整体使用说明
 >
@@ -78,3 +78,4 @@ RESTful规则
 	2017.03.25:代码与文档整理
 	2017.04.01:为支持ES2015做准备，代码优化
 	2017.04.02:以express中间件的形式提供服务，更加高内聚低耦合
+	2017.04.08:以中间件的形式重命名
