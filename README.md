@@ -9,11 +9,11 @@
 
 	3, node app.js(启动)
 
-单独使用x-batis中间件(任意express应用均可集成)
+单独使用express-xbatis中间件(任意express应用均可集成)
 >
-	1, npm install x-batis --save
+	1, npm install express-xbatis --save
 
-	2, let xbatis = require('x-batis')
+	2, let xbatis = require('express-xbatis')
 
 	3, app.use('/xbatis/', xbatis)
 
