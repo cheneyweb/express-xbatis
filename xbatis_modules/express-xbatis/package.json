@@ -1,6 +1,6 @@
 {
   "name": "express-xbatis",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "description": "极简风格的RESTful无后端中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,8 @@
     "sql"
   ],
   "dependencies": {
-    "nodebatis": "^2.1.1",
-    "express": "^4.15.2",
-    "tracer": "^0.8.7"
+    "express": "^4.16.2",
+    "tracer": "^0.8.11"
   },
   "author": "cheneyxu",
   "license": "ISC"
