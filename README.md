@@ -1,6 +1,8 @@
 # express-xbatis
 极简风格的RESTful无后端Node框架，基于express-xbatis中间件，只需要写SQL，然后直接RESTful请求，全自动CRUD
 
+[传送门：XServer官网文档](http://www.xserver.top)
+
 框架整体使用说明
 >
 	1, config/default.js 中设置数据库连接，执行npm install
@@ -52,19 +54,6 @@ RESTful规则
 	user.yml文件:
 		findByUsername:	
     		- select * from user where username = :username
-
-框架整合（开源力量）
->
-    "body-parser": "^1.17.1",
-    "config": "^1.25.1",
-    "connect-flash": "^0.1.1",
-    "express": "^4.15.2",
-    "express-session": "^1.15.1",
-    "moment": "^2.17.1",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
-    "tracer": "^0.8.7",
-    "nodebatis": "^2.1.1"
 
 帮助联系
 >
