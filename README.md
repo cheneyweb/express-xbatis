@@ -17,7 +17,7 @@
 
 	2, let xbatis = require('express-xbatis')
 
-	3, app.use('/xbatis/', xbatis)
+	3, xbatis.init(app, nodebatis, config.server)
 
 	yaml文件夹路径默认是 {project}/src/yaml/
 
@@ -68,3 +68,4 @@ RESTful规则
 	2017.04.01:为支持ES2015做准备，代码优化
 	2017.04.02:以express中间件的形式提供服务，更加高内聚低耦合
 	2017.04.08:以中间件的形式重命名
+	2018.05.02:精简和升级所有依赖，全新版本

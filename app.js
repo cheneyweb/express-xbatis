@@ -14,9 +14,8 @@ const log = require('tracer').colorConsole({ level: config.log.level })
 var app = express()
 app.use(bodyParser.json())
 
-// 使用路由统一控制
-xbatis.initConnect(nodebatis)   // 初始化mysql连接
-app.use(controllerRoot, xbatis)
+// 加载express-xbatis中间件
+xbatis.init(app, nodebatis, config.server)   // 初始化mysql连接
 
 // 开始服务监听
 app.listen(port)
